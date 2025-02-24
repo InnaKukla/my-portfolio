@@ -3,7 +3,11 @@ import BtnGitHub from "../../components/Buttons/BtnGitHub";
 import { projects } from "../../helpers/projectsList";
 
 import { Container, MainTitle, Section } from "../../main.styled";
-import { ProjectDetailsCover, ProjectDetailsSkills, ProjectDetailsWrapper } from "./ProjectPage.styled";
+import {
+  ProjectDetailsCover,
+  ProjectDetailsSkills,
+  ProjectDetailsWrapper,
+} from "./ProjectPage.styled";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -13,18 +17,22 @@ const ProjectPage = () => {
       <Section>
         <Container>
           <ProjectDetailsWrapper>
-            <MainTitle >{project.title}</MainTitle>
+            <MainTitle>{project.title}</MainTitle>
 
             <ProjectDetailsCover
               src={project.imgBig}
               alt={project.title}
+              width={695}
+              height={522}
             />
 
-            <ProjectDetailsSkills >
+            <ProjectDetailsSkills>
               <p>Skills: {project.skills}</p>
             </ProjectDetailsSkills>
 
-            {project.gitHubLink && <BtnGitHub link="https://github.com" />}
+            {project.gitHubLink && (
+              <BtnGitHub link="https://innakukla.github.io/my-team" />
+            )}
           </ProjectDetailsWrapper>
         </Container>
       </Section>

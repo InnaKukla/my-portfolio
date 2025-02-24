@@ -1,27 +1,19 @@
 import styled from "styled-components";
 
-
 export const ContainerApp = styled.div`
- min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 `;
 
 export const Container = styled.div`
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
-  
 `;
 
 export const Section = styled.section`
   padding: 70px 0;
-
-
-  @media screen and (max-width: 620px) {
-    padding: 40px 0;
-  }
 `;
 
 export const MainTitle = styled.h2`
@@ -33,9 +25,12 @@ export const MainTitle = styled.h2`
   color: var(--main-title);
   text-align: center;
 
-  @media screen and (max-width: 620px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     font-size: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 `;
 
@@ -46,14 +41,17 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 1.3;
 
-  @media screen and (max-width: 620px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 `;
 
 export const ContentList = styled.ul`
- margin: 0 auto;
+  margin: 0 auto;
   max-width: 650px;
   display: flex;
   flex-direction: column;
@@ -63,10 +61,12 @@ export const ContentList = styled.ul`
 
   a {
     color: var(--accent);
-}
-
-  @media screen and (max-width: 620px) {
+  }
+  @media screen and (min-width: 768px) {
     row-gap: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 `;
 
@@ -74,10 +74,13 @@ export const ContentListItem = styled.li`
   font-size: 18px;
   line-height: 1.5;
 
-  p{
-  margin-top: 0.5em;
-}
-  @media screen and (max-width: 620px) {
+  p {
+    margin-top: 0.5em;
+  }
+  @media screen and (min-width: 768px) {
     font-size: 16px;
   }
-`
+
+  @media screen and (min-width: 1280px) {
+  }
+`;

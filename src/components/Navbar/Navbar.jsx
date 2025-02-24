@@ -1,12 +1,19 @@
-import { NavLink } from "react-router";
-import { Nav, NavWrapper, NavLinkLogo, NavLinkLogoText, NavList } from "./Navbar.styled";
+import { NavLink, useLocation } from "react-router";
+import {
+  Nav,
+  NavWrapper,
+  NavLinkLogo,
+  NavLinkLogoText,
+  NavList,
+  NavListWrapper,
+} from "./Navbar.styled";
 
 import BtnDarkMode from "../Buttons/BtnDarkMode";
 import { Container } from "../../main.styled";
 
 const Navbar = () => {
-  const activeLink = "nav-list__link nav-list__link--active";
-  const normalLink = "nav-list__link";
+  const { pathname } = useLocation();
+
   return (
     <Nav>
       <Container>
@@ -15,41 +22,44 @@ const Navbar = () => {
             <NavLinkLogoText>Freelancer</NavLinkLogoText> portfolio
           </NavLinkLogo>
 
-          <BtnDarkMode />
+          <NavListWrapper>
+            <BtnDarkMode />
 
-          <NavList>
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Home
-              </NavLink>
-            </li>
+            <NavList>
+              <li>
+                <NavLink
+                  to="/"
+                  style={{
+                    color: pathname === "/" ? "#d54b4b" : "var(--white)",
+                  }}
+                >
+                  Home
+                </NavLink>
+              </li>
 
-            <li >
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li >
-              {/* <NavLink
-                to="/contacts"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Contacts
-              </NavLink> */}
-            </li>
-          </NavList>
+              <li>
+                <NavLink
+                  to="/projects"
+                  style={{
+                    color:
+                      pathname === "/projects" ? "#d54b4b" : "var(--white)",
+                  }}
+                >
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                {/* <NavLink
+                  to="/contacts"
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  Contacts
+                </NavLink> */}
+              </li>
+            </NavList>
+          </NavListWrapper>
         </NavWrapper>
       </Container>
     </Nav>

@@ -1,19 +1,14 @@
 import styled from "styled-components";
-import HeaderBG from '../../img/header-bg.png'
-
+import HeaderBG from "../../img/header-bg.png";
 
 export const HeaderContainer = styled.header`
-  padding: 60px 0 0;
-  /* /* min-height: 695px; */
-  min-height: 100vh; 
-width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   background-color: var(--header-bg);
-  
+
   background-image: url(${HeaderBG});
   background-repeat: no-repeat;
   background-size: auto;
@@ -21,8 +16,13 @@ width: 50%;
 
   color: var(--header-text);
   text-align: center;
-  @media (max-width: 620px) {
+
+  @media screen and (min-width: 768px) {
     min-height: unset;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 50%;
   }
 `;
 
@@ -33,22 +33,29 @@ export const HeaderWrapper = styled.div`
 
 export const HeaderTitle = styled.h1`
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.4;
-  font-family: 'Bogart', sans-serif;
-                                                
+  font-family: "Bogart", sans-serif;
 
-  @media (max-width: 620px) {
+  @media screen and (min-width: 768px) {
     font-size: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 40px;
   }
 `;
 
 export const HeaderTitleMainText = styled.strong`
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
-  @media (max-width: 620px) {
-    font-size: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 70px;
   }
 `;
 

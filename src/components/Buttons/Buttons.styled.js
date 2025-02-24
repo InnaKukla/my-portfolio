@@ -40,7 +40,7 @@ export const DarkModeButtonIcon = styled.img`
 
 export const Btn = styled.a`
   display: inline-block;
-  height: 48px;
+  /* height: 48px; */
   padding: 12px 28px;
 
   border-radius: 5px;

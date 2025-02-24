@@ -6,10 +6,10 @@ import {
   FooterSection,
   FooterWrapper,
   FooterSocialList,
-  Copyright, FooterSocialItem
+  Copyright,
+  FooterSocialItem,
 } from "./Footer.styled";
 import { Container } from "../../main.styled";
-
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
       <Container>
         <FooterWrapper>
           <FooterSocialList>
-            <FooterSocialItem >
+            <FooterSocialItem>
               <a href="https://www.instagram.com/inna_kukla/#">
                 <img src={instagram} alt="Link" />
               </a>

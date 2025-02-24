@@ -6,4 +6,5 @@ export const ProjectsList = styled.ul`
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+
 `;
