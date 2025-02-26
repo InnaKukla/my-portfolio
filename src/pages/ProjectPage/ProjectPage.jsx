@@ -31,7 +31,10 @@ const ProjectPage = () => {
             </ProjectDetailsSkills>
 
             {project.gitHubLink && (
-              <BtnGitHub link="https://innakukla.github.io/my-team" />
+              <BtnGitHub link={project.gitHubLink} type="gitHubLink"/>
+            )}
+            {project.webflowLink && (
+              <BtnGitHub link={project.webflowLink}  type="webflowLink"/>
             )}
           </ProjectDetailsWrapper>
         </Container>

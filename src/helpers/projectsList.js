@@ -4,8 +4,8 @@
 import project01 from "./../img/projects/01-bg.png";
 import project01Big from "./../img/projects/01-bg.png";
 
-import project02 from "./../img/projects/02.jpg";
-import project02Big from "./../img/projects/02-big.jpg";
+import project02 from "./../img/projects/02.png";
+import project02Big from "./../img/projects/02-big.png";
 
 import project03 from "./../img/projects/03.jpg";
 import project03Big from "./../img/projects/03-big.jpg";
@@ -28,11 +28,11 @@ const projects = [
 		gitHubLink: 'https://innakukla.github.io/my-team/',
 	},
 	{
-		title: 'Video service',
+		title: 'Landing. Interior design',
 		img: project02,
 		imgBig: project02Big,
-		skills: 'React, PHP, MySql',
-		gitHubLink: 'https://github.com',
+		skills: 'Webflow, CSS, HTML',
+		webflowLink: 'https://interior-design-64a23a.webflow.io/',
 	},
 	{
 		title: 'Video portal',
