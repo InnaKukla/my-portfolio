@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ProjectLink = styled.li`
-  max-width: 370px;
+  max-width: 600px;
   background-color: var(--project-card-bg);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   @media screen and (min-width: 768px) {
-    max-width: 350px;
+    /* max-width: 350px; */
   }
 
   @media screen and (min-width: 1280px) {
