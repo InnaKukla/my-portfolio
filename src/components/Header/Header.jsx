@@ -40,7 +40,7 @@ const Header = () => {
             </ContentListItem>
             <ContentListItem>
               <Title>Backend</Title>
-              <p>NodeJS, MongoDB</p>
+              <p>NodeJS, MongoDB, Render</p>
             </ContentListItem>
           </ContentList>
         </Container>
