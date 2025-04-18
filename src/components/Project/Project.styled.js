@@ -15,6 +15,9 @@ export const ProjectLink = styled.li`
 
 export const ProjectLinkImg = styled.img`
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  /* width={350} height={278} */
 `;
 
 export const ProjectLinkTitle = styled.h3`
