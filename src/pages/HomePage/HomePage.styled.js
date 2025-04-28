@@ -43,8 +43,10 @@ export const HomeHeroWrapper = styled.div`
 `;
 
 export const HomeProjectLinkWrapper = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
   align-content: center;
   justify-content: center;
   gap: 15px;
@@ -59,7 +61,7 @@ export const HomeProjectLinkWrapper = styled.ul`
   }
   @media screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     &:hover {
       gap: 20px;
       li {

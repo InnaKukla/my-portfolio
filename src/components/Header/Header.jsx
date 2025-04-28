@@ -22,7 +22,7 @@ const Header = () => {
           <HeaderTitleMainText>Inna Kukla</HeaderTitleMainText>
           <br />a frontend developer.
         </HeaderTitle>
-        <Btn href="Junior Resume.pdf" download>
+        <Btn href="Resume Inna Kukla.pdf" download>
           Download CV
         </Btn>
       </HeaderWrapper>

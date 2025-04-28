@@ -1,17 +1,17 @@
 // import project01 from "./../img/projects/01.jpg";
 // import project01Big from "./../img/projects/01-big.jpg";
 
-import project01 from "./../img/projects/01-bg.png";
+import project01 from "./../img/projects/01-2-bg.png";
 import project01Big from "./../img/projects/01-bg.png";
 
-import project02 from "./../img/projects/02.png";
+import project02 from "./../img/projects/02-project (1).png";
 import project02Big from "./../img/projects/02-big.png";
 
 import project03 from "./../img/projects/03.big.png";
 import project03Big from "./../img/projects/03.big.png";
 
-import project04 from "./../img/projects/04.jpg";
-import project04Big from "./../img/projects/04-big.jpg";
+import project04 from "./../img/projects/04-2-wedding.png";
+import project04Big from "./../img/projects/04-2-wedding.png";
 
 // import project05 from "./../img/projects/05.jpg";
 // import project05Big from "./../img/projects/05-big.jpg";
@@ -43,10 +43,11 @@ const projects = [
     gitHubLink: "https://innakukla.github.io/hotel-accessories/",
   },
   {
-    title: "Dating app",
+    title: "Wedding salon",
     img: project04,
     imgBig: project04Big,
-    skills: "React Native",
+    skills: "Soon...",
+    // gitHubLink: "Soon..."
   }
   // {
   //   title: "Landing",
