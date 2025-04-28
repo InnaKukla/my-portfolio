@@ -31,7 +31,7 @@ const projects = [
     title: "Landing. Interior design",
     img: project02,
     imgBig: project02Big,
-    skills: "Webflow, CSS, HTML",
+    skills: "Webflow, CSS3, HTML",
     webflowLink: "https://interior-design-64a23a.webflow.io/",
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     img: project03,
     imgBig: project03Big,
     skills:
-      "Rect JS, Node.js, MongoDB, Render, StyledComponents, MaterialUI, Hooks, Routers, Formik, Yup, Cloudinary, Axios",
+      "React JS, Node.js, MongoDB, Render, StyledComponents, MaterialUI, Hooks, Routers, Formik, Yup, Cloudinary, Axios",
     gitHubLink: "https://innakukla.github.io/hotel-accessories/",
   },
   {

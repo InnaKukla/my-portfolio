@@ -10,7 +10,7 @@ const Project = ({ title, img, index }) => {
   return (
     <NavLink to={`/project/${index}`}>
       <ProjectLink>
-        <ProjectLinkImg src={img} alt={title} />
+        <ProjectLinkImg src={img} alt={title} loading="lazy"/>
         <ProjectLinkTitle>{title}</ProjectLinkTitle>
       </ProjectLink>
     </NavLink>
