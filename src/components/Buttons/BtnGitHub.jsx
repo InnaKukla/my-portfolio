@@ -1,34 +1,36 @@
 import gitHubIcon from "../../img/icons/gitHub-black.svg";
 import webflowIcon from "../../img/icons/icons8-webflow.svg";
-import netlifyLogo from "../../img/icons/netlify-logo.svg";
+import netlifyIcon from "../../img/icons/netlify-logo.svg";
 import PropTypes from "prop-types";
 import { BtnOutline } from "./Buttons.styled";
 
 const BtnGitHub = ({ link, type }) => {
   const GitHubLink = type === "GitHubLink";
-  const Webflow = type === "Webflow";
+  const WebflowLink = type === "WebflowLink";
   const NetlifyLink = type === "NetlifyLink";
 
   return (
     <>
-      {GitHubLink ===
-      (
+      {GitHubLink && (
         <BtnOutline href={link} target="_blank" rel="noreferrer">
           <img src={gitHubIcon} alt="gitHubIcon" />
           GitHub repo
         </BtnOutline>
       )}
-      {Webflow ===
-      (
+      {WebflowLink && (
         <BtnOutline href={link} target="_blank" rel="noreferrer">
           <img src={webflowIcon} alt="webflowIcon" />
           Webflow
         </BtnOutline>
       )}
-      {NetlifyLink ===
-      (
+      {NetlifyLink && (
         <BtnOutline href={link} target="_blank" rel="noreferrer">
-          <img src={netlifyLogo} alt="netlifyIcon" />
+          <img
+            src={netlifyIcon}
+            alt="netlifyIcon"
+            width={50}
+            style={{ objectFit: "contain" }}
+          />
           Netlify
         </BtnOutline>
       )}

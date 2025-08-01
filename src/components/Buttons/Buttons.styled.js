@@ -61,7 +61,7 @@ export const Btn = styled.a`
 `;
 
 export const BtnOutline = styled.a`
-  display: flex;
+  display: inline-flex;
   column-gap: 10px;
   align-items: center;
 

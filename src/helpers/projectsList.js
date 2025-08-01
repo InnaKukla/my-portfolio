@@ -39,7 +39,7 @@ const projects = [
     img: project03,
     imgBig: project03Big,
     skills:
-      "React JS, Node.js, MongoDB, StyledComponents, MaterialUI, Hooks, Routers, Formik, Yup, Cloudinary, Axios",
+      "React JS, Node.js, MongoDB, StyledComponents, MaterialUI, Hooks, Routers, Formik, Yup, Cloudinary, Axios, Netlify",
     NetlifyLink: "https://hotel-accessories.netlify.app",
   },
   {
