@@ -32,15 +32,15 @@ const projects = [
     img: project02,
     imgBig: project02Big,
     skills: "Webflow, CSS3, HTML",
-    webflowLink: "https://interior-design-64a23a.webflow.io/",
+    WebflowLink: "https://interior-design-64a23a.webflow.io/",
   },
   {
     title: "Hotel Accessories",
     img: project03,
     imgBig: project03Big,
     skills:
-      "React JS, Node.js, MongoDB, Render, StyledComponents, MaterialUI, Hooks, Routers, Formik, Yup, Cloudinary, Axios",
-    gitHubLink: "https://innakukla.github.io/hotel-accessories/",
+      "React JS, Node.js, MongoDB, StyledComponents, MaterialUI, Hooks, Routers, Formik, Yup, Cloudinary, Axios",
+    NetlifyLink: "https://hotel-accessories.netlify.app",
   },
   {
     title: "Wedding salon",
