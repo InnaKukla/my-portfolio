@@ -30,11 +30,14 @@ const ProjectPage = () => {
               <p>Skills: {project.skills}</p>
             </ProjectDetailsSkills>
 
-            {project.gitHubLink && (
-              <BtnGitHub link={project.gitHubLink} type="gitHubLink"/>
+            {project.GitHubLink && (
+              <BtnGitHub link={project.GitHubLink} type="GitHubLink"/>
             )}
-            {project.webflowLink && (
-              <BtnGitHub link={project.webflowLink}  type="webflowLink"/>
+            {project.WebflowLink && (
+              <BtnGitHub link={project.WebflowLink}  type="WebflowLink"/>
+            )}
+             {project.NetlifyLink && (
+              <BtnGitHub link={project.NetlifyLink}  type="NetlifyLink"/>
             )}
           </ProjectDetailsWrapper>
         </Container>

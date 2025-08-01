@@ -25,7 +25,7 @@ const projects = [
     skills: "React, StyledComponents, MaterialUI, EmailJS, Hooks, Routers",
     img: project01,
     imgBig: project01Big,
-    gitHubLink: "https://innakukla.github.io/my-team/",
+    GitHubLink: "https://innakukla.github.io/my-team/",
   },
   {
     title: "Landing. Interior design",
